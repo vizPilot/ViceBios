@@ -1,0 +1,31 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = viZBIOSDxe
+  FILE_GUID                      = 7355a4c3-713f-4855-9668-557cfa5ca5bc
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 1.0
+
+  ENTRY_POINT                    = viZBIOSDxeInitialize
+
+[Sources.common]
+  viZBIOSDxe.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ArmPkg/ArmPkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  EmbeddedPkg/EmbeddedPkg.dec
+  viZBIOSPkg/viZBios.dec
+
+[LibraryClasses]
+  BaseMemoryLib
+  UefiDriverEntryPoint
+  UefiBootServicesTableLib
+  UefiRuntimeServicesTableLib
+  PrintLib
+  DebugLib
+  viZLib
+
+[Protocols]
+  gEfiGraphicsOutputProtocolGuid
+  gEfiSimpleTextInProtocolGuid

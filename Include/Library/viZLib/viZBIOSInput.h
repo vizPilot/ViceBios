@@ -1,0 +1,17 @@
+typedef enum {
+    VIZ_INPUT_NONE,
+    VIZ_INPUT_UP,
+    VIZ_INPUT_DOWN,
+    VIZ_INPUT_ENTER,
+    VIZ_INPUT_BACK
+} VIZ_INPUT_KEY;
+
+EFI_STATUS
+viZBIOS_InputInit (
+    VOID
+);
+
+VIZ_INPUT_KEY
+viZBIOS_GetInput (
+    VOID
+);
