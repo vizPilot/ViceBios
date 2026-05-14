@@ -8,7 +8,7 @@
 #include <Protocol/SimpleTextIn.h>
 #include <Protocol/GraphicsOutput.h>
 
-#include <Protocol/viZBIOSProtocol.h
+#include <Protocol/viZBIOSProtocol.h>
 #include <viZBIOS.h>
 
 #include "Color.h"
