@@ -13,6 +13,7 @@
 [Guids.common]
 
 [Protocols.common]
+  gViZBIOSProtocolGuid			 = { 0x8bbaf1a6, 0x4c4d, 0x42d2, { 0x89, 0xb4, 0x72, 0x2f, 0x31, 0x8a, 0xcb, 0x37 } }
 
 [LibraryClasses]
   LvglLib|Include/Library/LvglLib.h
